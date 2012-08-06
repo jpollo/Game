@@ -10,7 +10,7 @@
 
 #include "cocos2d.h"
 #include "HelloWorldScene.h"
-#include "GameScene.h"
+#include "MenuScene.h"
 
 USING_NS_CC;
 
@@ -43,11 +43,12 @@ bool AppDelegate::applicationDidFinishLaunching()
     //Game Scene
    // CCScene *pGameScene = GameScene::scene();
     //Menu Scene
-    CCScene *pMenuScene = GameScene::scene();
+    CCScene *pMenuScene = MenuScene::scene();
     
     // run
     //pDirector->runWithScene(pScene);
     //pDirector->runWithScene(pGameScene);
+    //CCLOG("Start run Scene....");
     pDirector->runWithScene(pMenuScene);
     return true;
 }

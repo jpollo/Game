@@ -74,7 +74,7 @@ bool MenuScene::init()
     this->addChild(pLabel, 1);
     
     // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+    CCSprite* pSprite = CCSprite::create("logo.png");
     
     // position the sprite on the center of the screen
     pSprite->setPosition( ccp(size.width/2, size.height/2) );

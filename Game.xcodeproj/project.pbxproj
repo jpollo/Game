@@ -196,6 +196,7 @@
 		0414885515CFAC3000D2226A /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0414885415CFAC3000D2226A /* AppDelegate.cpp */; };
 		0414885815CFAC3000D2226A /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0414885715CFAC3000D2226A /* HelloWorldScene.cpp */; };
 		049414F515D0113600B6CB5A /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049414F315D0113600B6CB5A /* MenuScene.cpp */; };
+		049414FC15D0208200B6CB5A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 049414FB15D0208200B6CB5A /* logo.png */; };
 		04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C176DE15CFBCA800F5C001 /* GameScene.cpp */; };
 /* End PBXBuildFile section */
 
@@ -605,6 +606,7 @@
 		0414885715CFAC3000D2226A /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		049414F315D0113600B6CB5A /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
 		049414F415D0113600B6CB5A /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		049414FB15D0208200B6CB5A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
 		04C176DC15CFBC4E00F5C001 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		04C176DE15CFBCA800F5C001 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -675,6 +677,7 @@
 		041485EB15CFAC2A00D2226A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				049414FB15D0208200B6CB5A /* logo.png */,
 				041485EC15CFAC2A00D2226A /* CloseNormal.png */,
 				041485EE15CFAC2A00D2226A /* CloseSelected.png */,
 				041485F015CFAC2A00D2226A /* Default.png */,
@@ -1512,6 +1515,7 @@
 				0414860215CFAC2A00D2226A /* iTunesArtwork in Resources */,
 				0414860415CFAC2A00D2226A /* fps_images.png in Resources */,
 				041486FF15CFAC2C00D2226A /* ChangeLog in Resources */,
+				049414FC15D0208200B6CB5A /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
