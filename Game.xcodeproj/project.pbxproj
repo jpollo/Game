@@ -195,6 +195,7 @@
 		0414885115CFAC3000D2226A /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0414885015CFAC3000D2226A /* RootViewController.mm */; };
 		0414885515CFAC3000D2226A /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0414885415CFAC3000D2226A /* AppDelegate.cpp */; };
 		0414885815CFAC3000D2226A /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0414885715CFAC3000D2226A /* HelloWorldScene.cpp */; };
+		049414F515D0113600B6CB5A /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049414F315D0113600B6CB5A /* MenuScene.cpp */; };
 		04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C176DE15CFBCA800F5C001 /* GameScene.cpp */; };
 /* End PBXBuildFile section */
 
@@ -602,6 +603,8 @@
 		0414885415CFAC3000D2226A /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		0414885615CFAC3000D2226A /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		0414885715CFAC3000D2226A /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		049414F315D0113600B6CB5A /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
+		049414F415D0113600B6CB5A /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		04C176DC15CFBC4E00F5C001 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		04C176DE15CFBCA800F5C001 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1440,6 +1443,8 @@
 				0414885715CFAC3000D2226A /* HelloWorldScene.cpp */,
 				04C176DC15CFBC4E00F5C001 /* GameScene.h */,
 				04C176DE15CFBCA800F5C001 /* GameScene.cpp */,
+				049414F315D0113600B6CB5A /* MenuScene.cpp */,
+				049414F415D0113600B6CB5A /* MenuScene.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1685,6 +1690,7 @@
 				0414885515CFAC3000D2226A /* AppDelegate.cpp in Sources */,
 				0414885815CFAC3000D2226A /* HelloWorldScene.cpp in Sources */,
 				04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */,
+				049414F515D0113600B6CB5A /* MenuScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
