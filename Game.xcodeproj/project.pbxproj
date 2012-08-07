@@ -198,6 +198,8 @@
 		049414F515D0113600B6CB5A /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049414F315D0113600B6CB5A /* MenuScene.cpp */; };
 		049414FC15D0208200B6CB5A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 049414FB15D0208200B6CB5A /* logo.png */; };
 		04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C176DE15CFBCA800F5C001 /* GameScene.cpp */; };
+		04C636E615D16F620095E7FD /* feng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C636E515D16F620095E7FD /* feng.mp3 */; };
+		04EB2E3315D128990092EC2D /* About.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04EB2E3215D128990092EC2D /* About.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -609,6 +611,10 @@
 		049414FB15D0208200B6CB5A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
 		04C176DC15CFBC4E00F5C001 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		04C176DE15CFBCA800F5C001 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		04C636E515D16F620095E7FD /* feng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feng.mp3; sourceTree = "<group>"; };
+		04EB2E2F15D1222B0092EC2D /* GameConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConstants.h; sourceTree = "<group>"; };
+		04EB2E3115D1288C0092EC2D /* About.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
+		04EB2E3215D128990092EC2D /* About.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = About.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -680,6 +686,7 @@
 				049414FB15D0208200B6CB5A /* logo.png */,
 				041485EC15CFAC2A00D2226A /* CloseNormal.png */,
 				041485EE15CFAC2A00D2226A /* CloseSelected.png */,
+				04C636E515D16F620095E7FD /* feng.mp3 */,
 				041485F015CFAC2A00D2226A /* Default.png */,
 				041485F215CFAC2A00D2226A /* HelloWorld.png */,
 				041485F415CFAC2A00D2226A /* Icon-72.png */,
@@ -1448,6 +1455,9 @@
 				04C176DE15CFBCA800F5C001 /* GameScene.cpp */,
 				049414F315D0113600B6CB5A /* MenuScene.cpp */,
 				049414F415D0113600B6CB5A /* MenuScene.h */,
+				04EB2E2F15D1222B0092EC2D /* GameConstants.h */,
+				04EB2E3115D1288C0092EC2D /* About.h */,
+				04EB2E3215D128990092EC2D /* About.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1516,6 +1526,7 @@
 				0414860415CFAC2A00D2226A /* fps_images.png in Resources */,
 				041486FF15CFAC2C00D2226A /* ChangeLog in Resources */,
 				049414FC15D0208200B6CB5A /* logo.png in Resources */,
+				04C636E615D16F620095E7FD /* feng.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1695,6 +1706,7 @@
 				0414885815CFAC3000D2226A /* HelloWorldScene.cpp in Sources */,
 				04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */,
 				049414F515D0113600B6CB5A /* MenuScene.cpp in Sources */,
+				04EB2E3315D128990092EC2D /* About.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

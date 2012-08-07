@@ -12,6 +12,7 @@
 using namespace cocos2d;
 using namespace CocosDenshion;
 
+
 CCScene* GameScene::scene()
 {
     // 'scene' is an autorelease object

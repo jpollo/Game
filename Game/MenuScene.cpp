@@ -7,12 +7,22 @@
 //
 
 #include "MenuScene.h"
-
+#include "About.h"
 #include "SimpleAudioEngine.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
 
+
+MenuScene::MenuScene()
+{
+
+}
+
+MenuScene::~MenuScene()
+{
+
+}
 
 
 CCScene* MenuScene::scene()
@@ -45,24 +55,24 @@ bool MenuScene::init()
     //关闭按钮
     
     // add a "close" icon to exit the progress. it's an autorelease object
-    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-                                                          "CloseNormal.png",
-                                                          "CloseSelected.png",
-                                                          this,
-                                                          menu_selector(MenuScene::menuCloseCallback) );
-    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
+   // CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
+     //                                                     "CloseNormal.png",
+       //                                                   "CloseSelected.png",
+         //                                                 this,
+         //                                                 menu_selector(MenuScene::menuCloseCallback) );
+    //pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
     
     // create menu, it's an autorelease object
-    CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-    pMenu->setPosition( CCPointZero );
-    this->addChild(pMenu, 1);
+    //CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
+    //pMenu->setPosition( CCPointZero );
+    //this->addChild(pMenu, 1);
     
     /////////////////////////////
     // 3. add your codes below...
     
     // add a label shows "Hello World"
     // create and initialize a label
-    CCLabelTTF* pLabel = CCLabelTTF::create("Game", "Thonburi", 34);
+    CCLabelTTF* pLabel = CCLabelTTF::create("凤凰传奇", "Thonburi", 34);
     
     // ask director the window size
     CCSize size = CCDirector::sharedDirector()->getWinSize();
@@ -86,28 +96,48 @@ bool MenuScene::init()
     //增加自己的菜单
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     
-    CCMenuItemFont *start = CCMenuItemFont::create("Start");
-    start->setAnchorPoint(CCPointZero);
-    start->setPosition(ccp(50,100));
+    double distance =60; //菜单之间相隔的距离
     
-    CCMenuItemFont *about = CCMenuItemFont::create("About");
-    about->setAnchorPoint(CCPointZero);
-    about->setPosition(ccp(50,80));
+    CCMenuItemFont *start = CCMenuItemFont::create("Start");
+    //start->setAnchorPoint(CCPointZero);
+    
+    start->setPosition(ccp(size.width/2,size.height/2+distance));
+    
+    CCMenuItemFont *about = CCMenuItemFont::create("About", this, menu_selector(MenuScene::menuAboutCallback));
+    //about->setAnchorPoint(CCPointZero);
+    about->setPosition(ccp(size.width/2,size.height/2));
     
     
     CCMenuItemFont *exit = CCMenuItemFont::create("Exit", this, menu_selector(MenuScene::menuCloseCallback));
-    exit->setAnchorPoint(CCPointZero);
-    exit->setPosition(ccp(50,50));
+    //exit->setAnchorPoint(CCPointZero);
+    exit->setPosition(ccp(size.width/2,size.height/2-distance));
     
     CCMenu* pMenu2 = CCMenu::create(start, about, exit, NULL);
     pMenu2->setPosition(CCPointZero);
     this->addChild(pMenu2, 2);
     
-    
+    //添加背景音乐
+    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3",true);
 #endif
     
     return true;
 }
+
+
+//添加背景音乐
+//void MenuScene::onEnter()
+//{
+//    SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic(CCFileUtils::fullPathFromRelativePath("feng.mp3"));
+   
+//}
+
+//退出时，关
+//void MenuScene::onExit()
+//{
+//    SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+//}
+
+
 
 void MenuScene::menuCloseCallback(CCObject* pSender)
 {
@@ -125,5 +155,5 @@ void MenuScene::menuStartCallback(CCObject* pSender)
 
 void MenuScene::menuAboutCallback(CCObject* pSender)
 {
-    
+    CCDirector::sharedDirector()->replaceScene(AboutScene::scene());
 }
