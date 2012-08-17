@@ -199,6 +199,7 @@
 		049414FC15D0208200B6CB5A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 049414FB15D0208200B6CB5A /* logo.png */; };
 		04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C176DE15CFBCA800F5C001 /* GameScene.cpp */; };
 		04C636E615D16F620095E7FD /* feng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C636E515D16F620095E7FD /* feng.mp3 */; };
+		04C999A115DE62A000B584B2 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C999A015DE62A000B584B2 /* SceneManager.cpp */; };
 		04EB2E3315D128990092EC2D /* About.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04EB2E3215D128990092EC2D /* About.cpp */; };
 /* End PBXBuildFile section */
 
@@ -612,6 +613,8 @@
 		04C176DC15CFBC4E00F5C001 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		04C176DE15CFBCA800F5C001 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		04C636E515D16F620095E7FD /* feng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feng.mp3; sourceTree = "<group>"; };
+		04C9999E15DE629100B584B2 /* SceneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		04C999A015DE62A000B584B2 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
 		04EB2E2F15D1222B0092EC2D /* GameConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConstants.h; sourceTree = "<group>"; };
 		04EB2E3115D1288C0092EC2D /* About.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
 		04EB2E3215D128990092EC2D /* About.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = About.cpp; sourceTree = "<group>"; };
@@ -1458,6 +1461,8 @@
 				04EB2E2F15D1222B0092EC2D /* GameConstants.h */,
 				04EB2E3115D1288C0092EC2D /* About.h */,
 				04EB2E3215D128990092EC2D /* About.cpp */,
+				04C9999E15DE629100B584B2 /* SceneManager.h */,
+				04C999A015DE62A000B584B2 /* SceneManager.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1707,6 +1712,7 @@
 				04C176DF15CFBCA800F5C001 /* GameScene.cpp in Sources */,
 				049414F515D0113600B6CB5A /* MenuScene.cpp in Sources */,
 				04EB2E3315D128990092EC2D /* About.cpp in Sources */,
+				04C999A115DE62A000B584B2 /* SceneManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

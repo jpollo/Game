@@ -95,6 +95,9 @@ bool MenuScene::init()
     
     //增加自己的菜单
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    //添加背景音乐
+    SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("feng.mp3");
+    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3");
     
     double distance =60; //菜单之间相隔的距离
     
@@ -116,26 +119,24 @@ bool MenuScene::init()
     pMenu2->setPosition(CCPointZero);
     this->addChild(pMenu2, 2);
     
-    //添加背景音乐
-    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3",true);
+    
 #endif
     
     return true;
 }
 
-
-//添加背景音乐
 //void MenuScene::onEnter()
 //{
-//    SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic(CCFileUtils::fullPathFromRelativePath("feng.mp3"));
-   
+//    //SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3", true);
+//    //播放的时候 其他选项无法响应
 //}
 
-//退出时，关
-//void MenuScene::onExit()
-//{
-//    SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
-//}
+
+//退出时，关闭音乐
+void MenuScene::onExit()
+{
+    SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+}
 
 
 

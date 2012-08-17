@@ -26,9 +26,9 @@ public:
     // there's no 'id' in cpp, so we recommand to return the exactly class pointer
     static cocos2d::CCScene* scene();
     
-//    virtual void onEnter();
+    //virtual void onEnter();
     
-//    virtual void onExit();
+    virtual void onExit();
     
     // 退出回调函数
     void menuCloseCallback(CCObject* pSender);
