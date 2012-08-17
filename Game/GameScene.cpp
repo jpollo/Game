@@ -39,9 +39,11 @@ bool GameScene::init()
         return false;
     }
     
-
+//为相应平台添加自己的东西
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-
+//add background
+    
+//add sprite 
 
 #endif
     

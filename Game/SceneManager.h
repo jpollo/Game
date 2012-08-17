@@ -17,7 +17,7 @@ using namespace cocos2d;
 class SceneManager {
 public:
     
-    static cocos2d::CCScene loadScene(SceneType type);
+    static void loadScene(SceneType type);
 
 private:
     

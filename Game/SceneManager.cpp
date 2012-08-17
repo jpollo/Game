@@ -13,20 +13,19 @@
 
 //include some layers
 //
-
-cocos2d::CCScene SceneManager::loadScene(SceneType type) {
+void SceneManager::loadScene(SceneType type) {
     switch (type) {
         case GAME_SCENE:
             CCLog("GAME SCENE");
-            return NULL;
+            //return NULL;
             break;
         case ABOUT_SCENE:
             CCLog("About Scene");
-            return NULL;
+            //return NULL;
             break;
         case INTRO_SCENE:
             CCLog("Introduction Scene");
-            return NULL;
+            //return NULL;
             break;
         default:
             break;

@@ -9,6 +9,7 @@
 #include "MenuScene.h"
 #include "About.h"
 #include "SimpleAudioEngine.h"
+#include "SceneManager.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -155,6 +156,6 @@ void MenuScene::menuStartCallback(CCObject* pSender)
 }
 
 void MenuScene::menuAboutCallback(CCObject* pSender)
-{
+{   SceneManager::loadScene(ABOUT_SCENE);
     CCDirector::sharedDirector()->replaceScene(AboutScene::scene());
 }
