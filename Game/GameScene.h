@@ -11,7 +11,7 @@
 #include "cocos2d.h"
 
 
-class GameScene : public cocos2d::CCLayer
+class GameScene : public cocos2d::CCLayerColor
 {
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
@@ -23,6 +23,9 @@ public:
       
     // implement the "static node()" method manually
     LAYER_CREATE_FUNC(GameScene);
+    
+    //关于 回调函数
+    void menuBackCallback(CCObject* pSender);
 };
 
 #endif

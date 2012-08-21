@@ -7,7 +7,8 @@
 //
 
 #include "MenuScene.h"
-#include "About.h"
+//#include "About.h"
+//#include "GameScene.h"
 #include "SimpleAudioEngine.h"
 #include "SceneManager.h"
 
@@ -99,12 +100,11 @@ bool MenuScene::init()
     //添加背景音乐
     SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("feng.mp3");
     SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3");
-    
+//
     double distance =60; //菜单之间相隔的距离
     
-    CCMenuItemFont *start = CCMenuItemFont::create("Start");
+    CCMenuItemFont *start = CCMenuItemFont::create("Start", this, menu_selector(MenuScene::menuStartCallback));
     //start->setAnchorPoint(CCPointZero);
-    
     start->setPosition(ccp(size.width/2,size.height/2+distance));
     
     CCMenuItemFont *about = CCMenuItemFont::create("About", this, menu_selector(MenuScene::menuAboutCallback));
@@ -152,10 +152,13 @@ void MenuScene::menuCloseCallback(CCObject* pSender)
 
 void MenuScene::menuStartCallback(CCObject* pSender)
 {
-    
+   
+    SceneManager::loadScene(GAME_SCENE);
+
 }
 
 void MenuScene::menuAboutCallback(CCObject* pSender)
-{   SceneManager::loadScene(ABOUT_SCENE);
-    CCDirector::sharedDirector()->replaceScene(AboutScene::scene());
+{
+    SceneManager::loadScene(ABOUT_SCENE);
+    
 }

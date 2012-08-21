@@ -11,8 +11,11 @@
 #include "cocos2d.h"
 #include "HelloWorldScene.h"
 #include "MenuScene.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
+using namespace cocos2d;
+using namespace CocosDenshion;
 
 AppDelegate::AppDelegate()
 {
@@ -57,9 +60,10 @@ bool AppDelegate::applicationDidFinishLaunching()
 void AppDelegate::applicationDidEnterBackground()
 {
     CCDirector::sharedDirector()->pause();
-
+    
     // if you use SimpleAudioEngine, it must be pause
-    // SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
+    
+   SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
 }
 
 // this function will be called when the app is active again
@@ -68,5 +72,5 @@ void AppDelegate::applicationWillEnterForeground()
     CCDirector::sharedDirector()->resume();
     
     // if you use SimpleAudioEngine, it must resume here
-    // SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
+    SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
 }
