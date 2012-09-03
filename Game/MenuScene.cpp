@@ -74,7 +74,7 @@ bool MenuScene::init()
     
     // add a label shows "Hello World"
     // create and initialize a label
-    CCLabelTTF* pLabel = CCLabelTTF::create("凤凰传奇", "Thonburi", 34);
+    CCLabelTTF* pLabel = CCLabelTTF::create("Jasonllinux", "Thonburi", 34);
     
     // ask director the window size
     CCSize size = CCDirector::sharedDirector()->getWinSize();
@@ -97,9 +97,10 @@ bool MenuScene::init()
     
     //增加自己的菜单
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    
     //添加背景音乐
     SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("feng.mp3");
-    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3");
+    //SimpleAudioEngine::sharedEngine()->playBackgroundMusic("feng.mp3");
 //
     double distance =60; //菜单之间相隔的距离
     

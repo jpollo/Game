@@ -10,10 +10,12 @@
 //include some scenes
 #include "About.h"
 #include "GameScene.h"
+#include "MenuScene.h"
 
 //include some layers
 //
 void SceneManager::loadScene(SceneType type) {
+    
     switch (type) {
         case GAME_SCENE:
             CCLog("GAME SCENE");
@@ -32,6 +34,9 @@ void SceneManager::loadScene(SceneType type) {
         case EXIT:
             CCLog("exit");
             break;
+        case BACK_TO_HOME:
+            CCLog("back to home");
+            CCDirector::sharedDirector()->replaceScene(MenuScene::scene());
         default:
             break;
     }

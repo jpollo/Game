@@ -26,6 +26,12 @@ public:
     
     //关于 回调函数
     void menuBackCallback(CCObject* pSender);
+    
+    void addTarget();
+    void spriteMoveFinished(CCNode* pSender);
+    void gameLogic(float dt);
+    
+
 };
 
 #endif
