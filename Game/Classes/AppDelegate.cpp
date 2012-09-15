@@ -37,6 +37,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     // turn on display FPS
     pDirector->setDisplayStats(false);
+    
+    
 
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
@@ -53,6 +55,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     //pDirector->runWithScene(pGameScene);
     //CCLOG("Start run Scene....");
     pDirector->runWithScene(pMenuScene);
+    
+    
     return true;
 }
 

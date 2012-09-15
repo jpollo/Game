@@ -50,6 +50,7 @@ bool GameScene::init()
     if(!CCLayerColor::initWithColor(ccc4(0, 0, 0, 0))) {
         return false;
     }
+
     
     CCSize size = CCDirector::sharedDirector()->getWinSize();
     
@@ -129,7 +130,7 @@ void GameScene::spriteMoveFinished(CCNode* sender)
 //Game logic
 void GameScene::gameLogic(float dt)
 {
-    CCLog("add a move sprite...");
+//    CCLog("add a move sprite...");
     this->addTarget();
 }
 
@@ -138,4 +139,44 @@ void GameScene::gameLogic(float dt)
 void GameScene::menuBackCallback(CCObject* pSender) {
     SceneManager::loadScene(BACK_TO_HOME);
 }
+
+// new 2.0
+void GameScene::registerWithTouchDispatcher()
+{
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
+}
+
+bool GameScene::ccTouchBegan(cocos2d::CCTouch *touch, cocos2d::CCEvent *event)
+{
+    //获取触点坐标
+    CCPoint touchLocation = touch->locationInView();
+    touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
+//    CCLog("touch began");
+    
+    
+    return true;
+}
+
+void GameScene::ccTouchEnded(cocos2d::CCTouch * touch, cocos2d::CCEvent * event)
+{
+
+}
+
+void GameScene::ccTouchMoved(cocos2d::CCTouch *touch, cocos2d::CCEvent * event)
+{
+    //移动精灵
+    CCPoint touchLocation = touch->locationInView();
+    CCPoint prevLocation = touch->previousLocationInView();
+    touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
+    prevLocation = CCDirector::sharedDirector()->convertToGL(prevLocation);
+    
+    //sprite -> setPosition
+
+}
+
+void GameScene::ccTouchCancelled(cocos2d::CCTouch* touch, cocos2d::CCEvent* event)
+{
+
+}
+
 

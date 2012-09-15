@@ -31,6 +31,11 @@ public:
     void spriteMoveFinished(CCNode* pSender);
     void gameLogic(float dt);
     
+    virtual void registerWithTouchDispatcher();
+    virtual bool ccTouchBegan(cocos2d::CCTouch *touch, cocos2d::CCEvent *pEvent);
+    virtual void ccTouchMoved(cocos2d::CCTouch *pTouche, cocos2d::CCEvent *pEvent);
+    virtual void ccTouchEnded(cocos2d::CCTouch *pTouche, cocos2d::CCEvent *pEvent);
+    virtual void ccTouchCancelled(cocos2d::CCTouch *touch, cocos2d::CCEvent *event);
 
 };
 

@@ -82,3 +82,4 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     exit(0);
 #endif
 }
+
